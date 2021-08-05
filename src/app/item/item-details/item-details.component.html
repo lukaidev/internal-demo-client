@@ -1,0 +1,10 @@
+<div>
+    <h3>Item Details</h3>
+    <div *ngIf="item$ | async as item">
+        <a routerLink="/list" >Back</a>
+        <h3>ID: {{item.id}}</h3>
+        <h3>ID: {{item.name}}</h3>
+    </div>
+</div>
+
+

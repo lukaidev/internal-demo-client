@@ -1,0 +1,8 @@
+<div>
+    <h3>Item List</h3>
+    <ul *ngIf="items$ | async as items">
+        <li *ngFor="let item of items">
+            <a [routerLink]="['/details']" [queryParams]="{id: item.id}" >{{item.name}}</a>
+        </li>
+    </ul>
+</div>
